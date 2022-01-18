@@ -1,0 +1,37 @@
+Langkah:
+1. Pastikan php versi terbaru
+cek dengan buka CMD/Terminal, ketik php --version
+Versi terbaru 8.0.11
+
+2. Jika masih versi lama, download XAMPP terbaru
+
+3. Rename folder C:\xampp menjadi xampp-old, lalu install XAMPP terbaru
+
+4. Pastikan composer terpasang versi 2.1.9, jika belum, download di
+getcomposer.org
+
+5. Pastikan laravel installer terpasang versi 4.2.8,
+cara installnya ketik: composer global require laravel/installer
+
+6. Buat project dengan ketik: laravel new BlogPribadi
+
+7. Jika sudah, masuk ke folder project dengan ketik: cd BlogPribadi
+
+8. lakukan instalasi laravel/ui dengan ketik:
+	composer require laravel/ui
+9. setelah install laravel/ui, lakukan aktivasi dengan ketik:
+	php artisan ui bootstrap --auth
+
+10. Ketik npm install && npm run dev, lalu jalankan lagi npm run dev
+
+11. Jika belum install nodejs, download dulu di nodejs.org, pilih versi 14.18.1 LTS, setelah itu install
+
+12. Buka project di text editor (VScode, sublime, dll)
+
+13. Lihat file .env, cek nama database di DB_DATABASE
+
+14. Buat database melalui localhost/phpmyadmin dengan nama yg sesuai dengan yg ada di .env
+
+15. Pastikan service apache dan mysql sudah dinyalakan di XAMPP Control Panel
+
+16. di terminal ketik: php artisan migrate
